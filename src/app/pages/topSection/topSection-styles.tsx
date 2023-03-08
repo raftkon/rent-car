@@ -10,10 +10,8 @@ export const TopSectionContainer = styled.div`
     max-w-screen-2xl
     flex
     justify-between
-    pl-3
-    pr-3
-    lg:pl-12
-    lg:pr-12
+    px-3
+    lg:px-12
   `}
 `;
 
@@ -36,7 +34,7 @@ export const RightContainer = styled.div`
 
 export const Slogan = styled.h1`
   ${tw`
-    font-bold
+    font-extrabold
     text-2xl
     text-black
     mb-4
@@ -44,7 +42,7 @@ export const Slogan = styled.h1`
     sm:text-3xl
     md:text-5xl
     md:font-extrabold
-    lg:font-bold
+    lg:font-black
     lg:leading-normal
     xl:text-6xl
     xl:leading-relaxed

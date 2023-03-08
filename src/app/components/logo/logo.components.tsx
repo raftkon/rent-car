@@ -1,14 +1,21 @@
 import React from "react";
 import CarLogoImg from "../../../assets/car-logo.png";
+import CarLogoDarkImg from "../../../assets/car-logo-dark.png";
 import { LogoContainer, Image, LogoText } from "./logo.styles";
 
-export function Logo() {
+interface ILogoProps {
+  color?: "white" | "dark";
+  bgColor?: "white" | "dark";
+}
+
+export function Logo(props: ILogoProps) {
+  const { color, bgColor } = props;
   return (
     <LogoContainer>
       <Image>
-        <img src={CarLogoImg} alt="" />
+        <img src={bgColor === "white" ? CarLogoImg : CarLogoDarkImg} alt="" />
       </Image>
-      <LogoText>Yourcar.</LogoText>
+      <LogoText color={color || "dark"}>Yourcar.</LogoText>
     </LogoContainer>
   );
 }

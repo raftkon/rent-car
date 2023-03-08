@@ -10,14 +10,13 @@ export const CardContainer = styled.div`
     items-center
     rounded-md
     bg-white
-    pt-1
-    pb-1
-    pr-2
-    pl-2
-    md:pt-2
-    md:pb-2
-    md:pl-9
-    md:pr-9
+    py-1
+    px-2
+    mx-3
+    md:py-2
+    md:px-9
+    mt-16
+    mb-40
   `}
 `;
 
@@ -32,13 +31,11 @@ export const ItemContainer = styled.div`
 `;
 
 export const ItemsContainer = styled.div`
-  margin-right: 3em;
-  display: flex;
-  /* ${tw`
-    flex-col
-    justify-between
-    items-center
-  `} */
+  ${tw`
+    flex
+    sm:mr-12
+  
+  `}
 `;
 
 export const Icon = styled.span`

@@ -4,13 +4,15 @@ import { FilledButton, OutlinedButton } from "./button.styles";
 interface IButtonProps {
   theme: "filled" | "outlined";
   text: string;
+  className?: string;
 }
 
 export function Button(props: IButtonProps) {
-  const { theme, text } = props;
+  const { theme, text, className } = props;
 
   if (theme === "filled") {
-    return <FilledButton>{text}</FilledButton>;
+    return <FilledButton className={className}>{text}</FilledButton>;
+  } else {
+    return <OutlinedButton className={className}>{text}</OutlinedButton>;
   }
-  return <OutlinedButton>{text}</OutlinedButton>;
 }

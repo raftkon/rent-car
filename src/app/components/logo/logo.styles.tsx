@@ -16,6 +16,7 @@ export const LogoText = styled.div`
         text-black
         m-1
     `}
+  ${({ color }) => (color === "white" ? tw`text-white` : tw`text-black`)}
 `;
 
 export const Image = styled.div`

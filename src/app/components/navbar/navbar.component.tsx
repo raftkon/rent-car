@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <NavbarContainer>
       <div>
-        <Logo />
+        <Logo color="dark" bgColor="white" />
       </div>
       <NavItems />
     </NavbarContainer>

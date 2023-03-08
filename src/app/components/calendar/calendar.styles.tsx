@@ -1,7 +1,6 @@
 import { Calendar } from "react-calendar";
 import styled, { css } from "styled-components";
 import "react-calendar/dist/Calendar.css";
-import { SCREENS } from "../responsive";
 
 export const DateCalendar = styled(Calendar)<{ offset: boolean }>`
   position: absolute;
